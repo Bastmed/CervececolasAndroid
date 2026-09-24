@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="dorado_cerveza">#D9A441</color>
+    <color name="tostado_oscuro">#7A4B1E</color>
+    <color name="fondo_crema">#F5E9D3</color>
+    <color name="texto_cafe">#3B2415</color>
+    <color name="verde">#5C7A3D</color>
+</resources>

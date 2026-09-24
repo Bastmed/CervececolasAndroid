@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "249723751267",
+    "project_id": "cerveceriaproyecto-8e355",
+    "storage_bucket": "cerveceriaproyecto-8e355.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:249723751267:android:0bb6d38d28f7465eec2156",
+        "android_client_info": {
+          "package_name": "com.bastian.cerveceriab"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwDlKp4SxVbIUB__cZDsoHUsL28YTI9fo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

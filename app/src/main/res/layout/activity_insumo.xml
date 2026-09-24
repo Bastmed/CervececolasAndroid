@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutInsumo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo_crema"
+    tools:context=".InsumoActivity">
+
+    <ListView
+        android:id="@+id/lvInsumos"
+        android:layout_width="413dp"
+        android:layout_height="173dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etNombreInsumo"
+        android:layout_width="0dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Nombre del insumo"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/etCantidad"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etCantidad"
+        app:layout_constraintTop_toBottomOf="@+id/lvInsumos" />
+
+    <EditText
+        android:id="@+id/etCantidad"
+        android:layout_width="224dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:hint="Cantidad"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toStartOf="@+id/btnEditarInsumo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNombreInsumo" />
+
+    <EditText
+        android:id="@+id/etProveedor"
+        android:layout_width="224dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="30dp"
+        android:ems="10"
+        android:hint="Proveedor"
+        android:inputType="text"
+        app:layout_constraintEnd_toStartOf="@+id/btnSalirInsumo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spUnidadInsumo" />
+
+    <EditText
+        android:id="@+id/etFechaCompra"
+        android:layout_width="222dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="29dp"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="Fecha compra"
+        android:inputType="text"
+        app:layout_constraintEnd_toStartOf="@+id/btnSalirInsumo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etProveedor" />
+
+    <Button
+        android:id="@+id/btnAgregarInsumo"
+        android:layout_width="109dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="400dp"
+        android:backgroundTint="@color/dorado_cerveza"
+        android:text="Agregar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lvInsumos"
+        app:strokeColor="@color/tostado_oscuro"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/btnEditarInsumo"
+        android:layout_width="106dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="31dp"
+        android:backgroundTint="@color/verde"
+        android:text="Editar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/etCantidad"
+        app:layout_constraintTop_toBottomOf="@+id/btnAgregarInsumo"
+        app:strokeColor="@color/tostado_oscuro"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/btnEliminarInsumo"
+        android:layout_width="105dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="#711212"
+        android:text="Eliminar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEditarInsumo"
+        app:strokeColor="@color/tostado_oscuro"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/btnSalirInsumo"
+        android:layout_width="100dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="33dp"
+        android:text="Salir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/etFechaCompra"
+        app:layout_constraintTop_toBottomOf="@+id/btnEliminarInsumo"
+        app:strokeColor="@color/tostado_oscuro"
+        app:strokeWidth="2dp" />
+
+    <Spinner
+        android:id="@+id/spUnidadInsumo"
+        android:layout_width="226dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="35dp"
+        app:layout_constraintEnd_toStartOf="@+id/btnEditarInsumo"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etCantidad" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

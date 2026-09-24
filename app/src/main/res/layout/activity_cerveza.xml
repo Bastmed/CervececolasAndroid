@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutCerveza"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo_crema"
+    tools:context=".CervezaActivity">
+
+    <ListView
+        android:id="@+id/lvCervezas"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="436dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSalirCerveza"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/etNombre"
+        android:layout_width="233dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lvCervezas" />
+
+    <EditText
+        android:id="@+id/etGrado"
+        android:layout_width="239dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Grado Alcohólico"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spEstiloCerveza" />
+
+    <Button
+        android:id="@+id/btnAgregarCerveza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/dorado_cerveza"
+        android:text="Agregar"
+        app:layout_constraintStart_toEndOf="@+id/btnEliminarCerveza"
+        app:layout_constraintTop_toBottomOf="@+id/etGrado"
+        app:strokeColor="@color/tostado_oscuro"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/btnEditarCerveza"
+        android:layout_width="105dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="64dp"
+        android:backgroundTint="@color/verde"
+        android:text="Editar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnEliminarCerveza"
+        app:layout_constraintTop_toBottomOf="@+id/btnAgregarCerveza"
+        app:strokeColor="@color/tostado_oscuro"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/btnSalirCerveza"
+        android:layout_width="102dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="64dp"
+        android:text="Salir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@color/tostado_oscuro"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/btnEliminarCerveza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="88dp"
+        android:backgroundTint="#6B0909"
+        android:text="Eliminar"
+        app:layout_constraintEnd_toStartOf="@+id/btnEditarCerveza"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAgregarCerveza"
+        app:strokeColor="@color/tostado_oscuro"
+        app:strokeWidth="2dp" />
+
+    <Spinner
+        android:id="@+id/spEstiloCerveza"
+        android:layout_width="236dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNombre" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
