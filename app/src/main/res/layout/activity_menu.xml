@@ -8,47 +8,46 @@
     android:background="@color/fondo_crema"
     tools:context=".MenuActivity">
 
-    <Button
-        android:id="@+id/btnLotes"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
-        android:backgroundTint="#03A9F4"
-        android:text="Lotes de Producción"
-        android:textColor="@color/white"
-        app:cornerRadius="40dp"
+    <ImageView
+        android:id="@+id/ivLogo2"
+        android:layout_width="189dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="560dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.477"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnInsumos"
-        app:strokeColor="@android:color/holo_orange_dark"
-        app:strokeWidth="2dp" />
-
-    <Button
-        android:id="@+id/btnInsumos"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
-        android:backgroundTint="@color/verde"
-        android:text="Insumos"
-        android:textColor="@color/white"
-        app:cornerRadius="40dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnCervezas"
-        app:strokeColor="@android:color/holo_orange_dark"
-        app:strokeWidth="2dp" />
+        app:layout_constraintTop_toBottomOf="@+id/tvBienvenida"
+        app:srcCompat="@drawable/ic_logo_cerveza" />
 
     <TextView
         android:id="@+id/tvBienvenida"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="49dp"
+        android:layout_marginTop="24dp"
         android:text="CerveceColas"
         android:textColor="@color/texto_cafe"
         android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/ivLogo2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnCervezas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/dorado_cerveza"
+        android:text="Cervezas"
+        app:cornerRadius="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBienvenida"
+        app:strokeColor="@android:color/holo_orange_dark"
+        app:strokeWidth="2dp" />
 
     <Button
         android:id="@+id/btnCerrarSesion"
@@ -60,23 +59,38 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnLotes"
-        app:layout_constraintVertical_bias="0.031"
+        app:layout_constraintVertical_bias="0.0"
         app:strokeColor="@color/tostado_oscuro"
         app:strokeWidth="2dp" />
 
     <Button
-        android:id="@+id/btnCervezas"
+        android:id="@+id/btnInsumos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
-        android:layout_marginEnd="8dp"
-        android:backgroundTint="@color/dorado_cerveza"
-        android:text="Cervezas"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/verde"
+        android:text="Insumos"
+        android:textColor="@color/white"
         app:cornerRadius="40dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvBienvenida"
+        app:layout_constraintTop_toBottomOf="@+id/btnCervezas"
+        app:strokeColor="@android:color/holo_orange_dark"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/btnLotes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#03A9F4"
+        android:text="Lotes de Producción"
+        android:textColor="@color/white"
+        app:cornerRadius="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnInsumos"
         app:strokeColor="@android:color/holo_orange_dark"
         app:strokeWidth="2dp" />
 
