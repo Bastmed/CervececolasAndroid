@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
-        android:backgroundTint="@color/tostado_oscuro"
+        android:backgroundTint="#03A9F4"
         android:text="Lotes de Producción"
         android:textColor="@color/white"
         app:cornerRadius="40dp"

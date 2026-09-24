@@ -10,8 +10,8 @@
 
     <ListView
         android:id="@+id/lvInsumos"
-        android:layout_width="413dp"
-        android:layout_height="173dp"
+        android:layout_width="409dp"
+        android:layout_height="172dp"
         android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -22,6 +22,7 @@
         android:id="@+id/etNombreInsumo"
         android:layout_width="0dp"
         android:layout_height="49dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
         android:ems="10"
         android:hint="Nombre del insumo"
@@ -47,10 +48,10 @@
 
     <EditText
         android:id="@+id/etProveedor"
-        android:layout_width="224dp"
-        android:layout_height="48dp"
+        android:layout_width="219dp"
+        android:layout_height="51dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="30dp"
         android:ems="10"
         android:hint="Proveedor"
@@ -62,29 +63,31 @@
 
     <EditText
         android:id="@+id/etFechaCompra"
-        android:layout_width="222dp"
-        android:layout_height="50dp"
+        android:layout_width="219dp"
+        android:layout_height="54dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="29dp"
+        android:layout_marginTop="24dp"
         android:ems="10"
         android:focusable="false"
         android:hint="Fecha compra"
         android:inputType="text"
-        app:layout_constraintEnd_toStartOf="@+id/btnSalirInsumo"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etProveedor" />
+        app:layout_constraintTop_toBottomOf="@+id/etProveedor"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/btnAgregarInsumo"
         android:layout_width="109dp"
         android:layout_height="50dp"
+        android:layout_marginStart="33dp"
         android:layout_marginEnd="28dp"
         android:layout_marginBottom="400dp"
         android:backgroundTint="@color/dorado_cerveza"
         android:text="Agregar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/etNombreInsumo"
         app:layout_constraintTop_toBottomOf="@+id/lvInsumos"
         app:strokeColor="@color/tostado_oscuro"
         app:strokeWidth="2dp" />
@@ -107,11 +110,13 @@
         android:id="@+id/btnEliminarInsumo"
         android:layout_width="105dp"
         android:layout_height="51dp"
+        android:layout_marginStart="37dp"
         android:layout_marginTop="28dp"
         android:layout_marginEnd="30dp"
-        android:backgroundTint="#711212"
+        android:backgroundTint="#E74343"
         android:text="Eliminar"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/spUnidadInsumo"
         app:layout_constraintTop_toBottomOf="@+id/btnEditarInsumo"
         app:strokeColor="@color/tostado_oscuro"
         app:strokeWidth="2dp" />
@@ -124,6 +129,7 @@
         android:layout_marginEnd="33dp"
         android:text="Salir"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/etFechaCompra"
         app:layout_constraintTop_toBottomOf="@+id/btnEliminarInsumo"
         app:strokeColor="@color/tostado_oscuro"
@@ -131,9 +137,9 @@
 
     <Spinner
         android:id="@+id/spUnidadInsumo"
-        android:layout_width="226dp"
+        android:layout_width="221dp"
         android:layout_height="53dp"
-        android:layout_marginStart="12dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="35dp"
         app:layout_constraintEnd_toStartOf="@+id/btnEditarInsumo"
